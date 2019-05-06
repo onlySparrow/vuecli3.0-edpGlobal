@@ -2,7 +2,7 @@
 
 ------------
 ## 一,开发组件
-1, down下代码地址:[https://github.com/onlySparrow/vue-npm.git](https://github.com/onlySparrow/vue-npm.git)
+1, down下代码地址:[https://github.com/onlySparrow/vuecli3.0-edpGlobal.git](https://github.com/onlySparrow/vuecli3.0-edpGlobal.git)
 
 2, 执行命令安装依赖 npm install
 
