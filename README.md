@@ -90,15 +90,15 @@
 ## 三, 组建使用说明
 ## Install
 ```shell
-npm install edpGlobal -S
+npm install edpglobal -S
 ```
 
 ## Quick Start
 在 `main.js` 文件中引入插件并注册
 ``` javascript
 import Vue from 'vue'
-import edpGlobal from 'edpGlobal'
-Vue.use(edpGlobal);
+import edpglobal from 'edpglobal'
+Vue.use(edpglobal);
 ```
 
 ## Simple usage
@@ -106,32 +106,50 @@ Vue.use(edpGlobal);
 ```vue
 <template>
 	<div>
+		<div class="edpglobal-item">
+			<label>Switch: </label>
+			<edp-switch v-model="lightSwitch">开关(开):</edp-switch>
+			<edp-switch v-model="switchLight">开关(关):</edp-switch>
+		</div>
 		<edp-list :styleObject="styleObject" :listData="listData"></edp-list>
+		<div class="page-content">
+			<edp-colorpicker v-model="color" v-on:change="headleChangeColor"></edp-colorpicker>
+		</div>
 	</div>
 </template>
 <script>
 	export default {
 		data() {
 			return {
+				color: "#ff0000",
+				lightSwitch: false,
+				switchLight: true,
 				styleObject:{
-					color: 'blue',
+                    color: 'blue',
     				fontSize: '28px',
-    				width:'100%',
-    				
-				},
-				todos: [{
+    				width:'100%'
+                },
+				listData: [{
 						id: 1,
-						title: '1 Do the dishes000',
+						title: 'one the dishes',
 					},
 					{
 						id: 2,
-						title: '2 Take out the trash',
+						title: 'two the dishes',
 					},
 					{
 						id: 3,
-						title: '3 Mow the lawn'
+						title: 'three the dishes'
+					},
+					{
+						id: 4,
+						title: 'four the dishes'
+					},
+					{
+						id: 5,
+						title: 'five the dishes'
 					}
-				],
+				]
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>这是拾色板</h1>
-    <div class="page-content" v-hljs>
+    <div class="page-content">
 			<edp-colorpicker v-model="color" v-on:change="headleChangeColor"></edp-colorpicker>
 		</div>
   </div>
