@@ -1,21 +1,20 @@
 <template>
 	<div class="home">
-		<h1>这是列表</h1>
-		<!--<HelloWorld msg="Welcome to HelloWorld" />-->
-		<edp-list :styleObject="styleObject" :listData="listData"></edp-list>
-
+		<h1>这是按钮</h1>
+		<div class="edpglobal-item">
+			<label>Switch: </label>
+			<edp-switch v-model="lightSwitch">开关(开):</edp-switch>
+			<edp-switch v-model="switchLight">开关(关):</edp-switch>
+		</div>
 	</div>
 </template>
 
 <script>
-//	import HelloWorld from "@/components/HelloWorld.vue";
-
 	export default {
-//		components: {
-//			HelloWorld
-//		},
 		data() {
 			return {
+				lightSwitch: false,
+				switchLight: true,
 				styleObject: {
 					color: 'grey',
 					fontSize: '28px',

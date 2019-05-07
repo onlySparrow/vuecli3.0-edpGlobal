@@ -2,8 +2,9 @@
 	<div id="app">
 		<div>
 			<div id="nav">
-				<router-link to="/">列表</router-link> |
-				<router-link to="/edpColorPicker">这是拾色板</router-link>
+				<router-link to="/">拾色板</router-link>|
+				<router-link to="/edpList">列表</router-link> |
+				<router-link to="/edpSwitch">按钮</router-link> 
 			</div>
 			<router-view />
 		</div>

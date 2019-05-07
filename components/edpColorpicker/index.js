@@ -1,3 +1,11 @@
+/*
+ * @Author:  
+ * @Email:  
+ * @Date: 2019-04-28 18:00:00 
+ * @Last Modified by: 
+ * @Last Modified time: 
+ * @Description: 
+ */
 // 导入组件
 import edpColorpicker from './edpColorpicker.vue'
 

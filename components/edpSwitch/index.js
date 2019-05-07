@@ -7,12 +7,8 @@
  * @Description: 
  */
 // 导入组件
-import edpList from './edpList.vue'
-
+import edpSwitch from './edpSwitch';
 // 为组件提供 install 安装方法，供按需引入
-edpList.install = function (Vue) {
-  Vue.component(edpList.name, edpList)
-}
-
+edpSwitch.install = Vue => Vue.component(edpSwitch.name, edpSwitch);
 // 默认导出组件
-export default edpList
+export default edpSwitch;

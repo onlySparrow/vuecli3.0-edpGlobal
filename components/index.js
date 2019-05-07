@@ -1,11 +1,21 @@
-// 导入颜色选择器组件
+/*
+ * @Author:  
+ * @Email:  
+ * @Date: 2019-04-28 18:00:00 
+ * @Last Modified by: 
+ * @Last Modified time: 
+ * @Description: 
+ */
+// 导入组件
 import edpColorpicker from './edpColorpicker'
 import edpList from './edpList'
+import edpSwitch from './edpSwitch'
 
 // 存储组件列表
 const components = [
   edpColorpicker,
-  edpList
+  edpList,
+  edpSwitch
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
@@ -16,7 +26,7 @@ const install = function (Vue) {
   components.map(component => Vue.component(component.name, component))
 }
 
-// 判断是否是直接引入文件
+// 判断是否是直接引入文件 支持使用标签的方式引入
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
@@ -26,5 +36,6 @@ export default {
   install,
   // 以下是具体的组件列表
   edpColorpicker,
-  edpList
+  edpList,
+  edpSwitch
 }

@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import edpList from "./components/edp-list.vue";
 import edpColorPicker from "./components/edp-colorPicker.vue";
+import edpList from "./components/edp-list.vue";
+import edpSwitch from "./components/edp-switch.vue";
 
 Vue.use(Router);
 
@@ -11,13 +12,18 @@ export default new Router({
   routes: [
     {
       path: "/",
+      name: "edpColorPicker",
+      component: edpColorPicker
+    },
+    {
+      path: "/edpList",
       name: "edpList",
       component: edpList
     },
     {
-      path: "/edpColorPicker",
-      name: "edpColorPicker",
-      component: edpColorPicker
+      path: "/edpSwitch",
+      name: "edpSwitch",
+      component: edpSwitch
     }
   ]
 });

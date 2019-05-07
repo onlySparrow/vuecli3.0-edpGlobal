@@ -1,6 +1,6 @@
 {
-  "name": "edpGlobal",
-  "version": "0.1.0",
+  "name": "edpglobal",
+  "version": "0.1.2",
   "description": "edp模块汇总",
   "main": "lib/vcolorpicker.umd.min.js",
   "private": false,

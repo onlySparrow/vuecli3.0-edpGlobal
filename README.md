@@ -2,7 +2,7 @@
 
 ------------
 ## 一,开发组件
-1, down下代码地址:[https://github.com/onlySparrow/vuecli3.0-edpGlobal.git](https://github.com/onlySparrow/vuecli3.0-edpGlobal.git)
+1, down下代码地址:
 
 2, 执行命令安装依赖 npm install
 
@@ -34,7 +34,7 @@
 
 4, vue.config.js配置说明
 
-   ```json
+   ```javascript
     const path = require('path');
 	function resolve(dir) {
 		return path.join(__dirname, dir)
@@ -73,7 +73,7 @@
 ```
 
 5, 增加组件步骤
-  + 在 components 创建新的文件夹并添加.vue和index.js
+  + 在 components 创建新的文件夹并添加.vue和index.js  (需填写组建的name值)
   + 并在 components/index. js文件下加载组件
 
 6, 打包组件 npm run lib
